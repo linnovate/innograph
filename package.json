@@ -1,0 +1,22 @@
+{
+  "name": "innograph",
+  "version": "1.0.0",
+  "description": "Innograph provides a graphQL powered layer for sharing and reusing vertical schemas (like social, tourism, productiviy, commerce etc...) ",
+  "main": "index.js",
+  "repository": "git@github.com:linnovate/innograph.git",
+  "author": "Lior Kesos <lior@linnovate.net>",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node index.js --presets es2015,stage-2"
+  },
+  "dependencies": {
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-react": "^6.23.0",
+    "express-graphql": "^0.6.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "babel-preset-es2015": "^6.22.0",
+    "babel-preset-stage-2": "^6.22.0"
+  }
+}
