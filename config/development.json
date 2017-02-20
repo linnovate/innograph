@@ -1,3 +1,6 @@
 {
-"activeSchemas":"social,foobar"
+	"activeSchemas":{
+		"social":["profile","friend","post"],
+		"travel":["hotel","room"]
+	}
 }

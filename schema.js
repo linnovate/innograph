@@ -1,4 +1,4 @@
-  import {
+/*  import {
   graphql,
   GraphQLSchema,
   GraphQLObjectType,
@@ -20,3 +20,26 @@ var  testSchema = new GraphQLSchema({
 });
 
 export {testSchema};
+*/
+
+
+// schema.js
+import Author from './schemas/innovation/author.js';
+import { makeExecutableSchema } from 'graphql-tools';
+
+const RootQuery = `
+  type RootQuery {
+    author(name: String): Author
+  }
+`;
+
+const SchemaDefinition = `
+  schema {
+    query: RootQuery
+  }
+`;
+
+export default makeExecutableSchema({
+  typeDefs: [SchemaDefinition, RootQuery, Author],
+  resolvers: {},
+})
