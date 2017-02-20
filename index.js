@@ -1,7 +1,11 @@
 const express = require('express');
+const config = require('config');
+console.log(activeSchemas);
 const graphqlHTTP = require('express-graphql');
 import {testSchema} from './schema';
 import {graphql} from 'graphql';
+
+var activeSchemas = config.get('activeSchemas');
 
 var query = '{ hello }';
 graphql(testSchema, query).then(result => {
