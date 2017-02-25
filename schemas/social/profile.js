@@ -10,4 +10,4 @@ const Profile = `
   }
 `;
 
-export default () => [Profile, Post];
+export default () => [Profile, Post ];
