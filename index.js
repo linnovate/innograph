@@ -7,7 +7,7 @@ import {graphql} from 'graphql';
 
 var activeSchemas = config.get('activeSchemas');
 
-var query = '{ product {name} }';
+var query = '{ profile {name} }';
 graphql(testSchema, query).then(result => {
 
   // Prints
@@ -15,7 +15,6 @@ graphql(testSchema, query).then(result => {
   //   data: { hello: "world" }
   // }
   console.log(result);
-
 });
 
 const app = express();
