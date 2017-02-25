@@ -7,7 +7,7 @@ import {graphql} from 'graphql';
 
 var activeSchemas = config.get('activeSchemas');
 
-var query = '{ author {name} }';
+var query = '{ product {name} }';
 graphql(testSchema, query).then(result => {
 
   // Prints

@@ -24,12 +24,14 @@ export {testSchema};
 
 
 // schema.js
-import Author from './schemas/innovation/author.js';
+import Product from './schemas/innovation/product.js';
 import { makeExecutableSchema } from 'graphql-tools';
+import Resolvers from './schemas/innovation/resolvers';
+
 
 const RootQuery = `
   type RootQuery {
-    author(name: String): Author
+    product(name: String): Product
   }
 `;
 
@@ -39,7 +41,9 @@ const SchemaDefinition = `
   }
 `;
 
+
+
 export default makeExecutableSchema({
-  typeDefs: [SchemaDefinition, RootQuery, Author],
-  resolvers: {},
+  typeDefs: [SchemaDefinition, RootQuery, Product],
+  resolvers: Resolvers
 })
