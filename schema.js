@@ -5,7 +5,7 @@ import { makeExecutableSchema } from 'graphql-tools';
 
 const RootQuery = `
   type RootQuery {
-    profile(name: String): Profile
+    profile(firstName: String): Profile
   }
 `;
 

@@ -1,7 +1,10 @@
 const resolvers = {
   RootQuery: {
     profile(root, args){
-      return { id: 1, firstName: 'Hello', lastName: 'World' };
+      return { 
+		id: 1,
+		firstName: 'Hello',
+		lastName: 'World' };
     },
   },
   Profile: {

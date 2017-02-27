@@ -7,7 +7,7 @@ import {graphql} from 'graphql';
 
 var activeSchemas = config.get('activeSchemas');
 
-var query = '{ profile {name} }';
+var query = '{ profile {firstName} }';
 graphql(testSchema, query).then(result => {
 
   // Prints
