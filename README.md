@@ -1,5 +1,7 @@
 # Welcome to Innograph
 
+[![Join the chat at https://gitter.im/linnovate/innograph](https://badges.gitter.im/linnovate/innograph.svg)](https://gitter.im/linnovate/innograph?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Innograph was created to define a set of shared schemas for projects and platforms that used graphQL for their object module.
 Many platforms and projects could share the same object module and would be happy to contribute or collaberate around their schemas.
 
