@@ -1,6 +1,5 @@
 // schema.js
-import Profile from './schemas/social/profile.js';
-import Resolvers from './schemas/social/resolvers';
+import  Profile from 'innograph-template';
 import { makeExecutableSchema } from 'graphql-tools';
 
 const RootQuery = `
@@ -16,6 +15,5 @@ const SchemaDefinition = `
 `;
 
 export default makeExecutableSchema({
-  typeDefs: [SchemaDefinition, RootQuery, Profile],
-  resolvers: Resolvers
+  typeDefs: [SchemaDefinition, RootQuery, Profile]
 })
