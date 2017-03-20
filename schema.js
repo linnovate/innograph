@@ -1,4 +1,4 @@
-// schema.js
+// schema.js //
 import template from 'innograph-template';
 import { makeExecutableSchema } from 'graphql-tools';
 import Resolvers from './schemas/social/resolvers';
