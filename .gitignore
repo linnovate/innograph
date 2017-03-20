@@ -1,1 +1,5 @@
 node_modules/
+# Bit stuff
+.bit
+components/
+inline_components/
