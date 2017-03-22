@@ -9,8 +9,8 @@
 6 silly lifecycle innograph@1.0.0~prestart: no script for prestart, continuing
 7 info lifecycle innograph@1.0.0~start: innograph@1.0.0
 8 verbose lifecycle innograph@1.0.0~start: unsafe-perm in lifecycle true
-9 verbose lifecycle innograph@1.0.0~start: PATH: /Users/liorkesos/.nvm/versions/node/v7.5.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/liorkesos/work/newgraf/innograph/node_modules/.bin:/Users/liorkesos/Downloads/google-cloud-sdk/bin:/Users/liorkesos/.nvm/versions/node/v7.5.0/bin:/Users/liorkesos/.platformsh/bin:/Users/liorkesos/Downloads/google-cloud-sdk/bin:/Users/liorkesos/.platformsh/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/MAMP/bin/php/php5.5.26/bin:/Applications/MAMP/Library/bin:/Applications/MAMP/bin/php/php5.5.26/bin:/Applications/MAMP/Library/bin
-10 verbose lifecycle innograph@1.0.0~start: CWD: /Users/liorkesos/work/newgraf/innograph
+9 verbose lifecycle innograph@1.0.0~start: PATH: /Users/liorkesos/.nvm/versions/node/v7.5.0/lib/node_modules/npm/bin/node-gyp-bin:/Users/liorkesos/work/newgraf/innoold/node_modules/.bin:/Users/liorkesos/Downloads/google-cloud-sdk/bin:/Users/liorkesos/.nvm/versions/node/v7.5.0/bin:/Users/liorkesos/.platformsh/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/MAMP/bin/php/php5.5.26/bin:/Applications/MAMP/Library/bin
+10 verbose lifecycle innograph@1.0.0~start: CWD: /Users/liorkesos/work/newgraf/innoold
 11 silly lifecycle innograph@1.0.0~start: Args: [ '-c', 'babel-node index.js --presets es2015,stage-2' ]
 12 silly lifecycle innograph@1.0.0~start: Returned: code: 1  signal: null
 13 info lifecycle innograph@1.0.0~start: Failed to exec start script
@@ -25,7 +25,7 @@
 14 verbose stack     at maybeClose (internal/child_process.js:890:16)
 14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
 15 verbose pkgid innograph@1.0.0
-16 verbose cwd /Users/liorkesos/work/newgraf/innograph
+16 verbose cwd /Users/liorkesos/work/newgraf/innoold
 17 error Darwin 16.3.0
 18 error argv "/Users/liorkesos/.nvm/versions/node/v7.5.0/bin/node" "/Users/liorkesos/.nvm/versions/node/v7.5.0/bin/npm" "start"
 19 error node v7.5.0

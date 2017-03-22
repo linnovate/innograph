@@ -8,6 +8,7 @@
         "tester": "bit.envs/testers/mocha"
     },
     "dependencies": {
-        "liorkesos.innograph/innograph/social": "1"
+        "liorkesos.innograph/innograph/social": "1",
+        "liorkesos.innograph/social/profile": "2"
     }
 }
