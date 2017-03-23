@@ -3,30 +3,22 @@ import template from 'innograph-template';
 import { makeExecutableSchema } from 'graphql-tools';
 import bit from 'bit-js';
 
-const { ProfileSchema, Resolver } = bit('social/profile')();
-console.log ('---');
-console.log( typeof(ProfileSchema) );
-console.log ('---');
-console.log( Resolver );
-
+const { Profile, Resolver } = bit('social/profile')();
 
 const RootQuery = `
-  type RootQuery {
-    profile(firstName: String): ProfileSchema
+  type Query {
+    profiles: [Profile]
   }
 `;
 
 const SchemaDefinition = `
   schema {
-    query: RootQuery
+    query: Query
   }
 `;
-console.log('----');
-
-console.log(SchemaDefinition);
-
 
 export default makeExecutableSchema({
-  typeDefs: [ SchemaDefinition, RootQuery, ProfileSchema ],
-  resolvers: Resolver
+  typeDefs: [SchemaDefinition, RootQuery, Profile],
+  resolvers: Resolver,
+  allowUndefinedInResolve: false
 })

@@ -7,14 +7,9 @@ import {graphql} from 'graphql';
 
 var activeSchemas = config.get('activeSchemas');
 
-var query = '{ profile {firstName} }';
+var query = '{ profiles {id firstName} }';
 graphql(testSchema, query).then(result => {
-
-  // Prints
-  // {
-  //   data: { hello: "world" }
-  // }
-  console.log(result);
+  console.log(JSON.stringify(result));
 });
 
 const app = express();
