@@ -8,7 +8,7 @@
         "tester": "bit.envs/testers/mocha"
     },
     "dependencies": {
-        "innograph.social/profile/schema": "1",
-        "innograph.social/profile/resolver": "1"
+        "innograph.social/profile/schema": "2",
+        "innograph.social/profile/resolver": "2"
     }
 }
