@@ -3,7 +3,8 @@ import template from 'innograph-template';
 import { makeExecutableSchema } from 'graphql-tools';
 import bit from 'bit-js';
 
-const { Profile, Resolver } = bit('social/profile')();
+const Profile = bit('profile/schema');
+const Resolver = bit('profile/resolver');
 
 const RootQuery = `
   type Query {
