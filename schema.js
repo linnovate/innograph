@@ -1,5 +1,4 @@
 // schema.js //
-import template from 'innograph-template';
 import { makeExecutableSchema } from 'graphql-tools';
 import bit from 'bit-js';
 
