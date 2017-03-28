@@ -1,5 +1,8 @@
+# Npm
 node_modules/
+npm-debug.*
+yarn.lock
+
 # Bit stuff
 .bit
-components/
 inline_components/

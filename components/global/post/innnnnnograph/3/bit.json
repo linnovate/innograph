@@ -7,5 +7,6 @@
         "compiler": "none",
         "tester": "none"
     },
-    "dependencies": {}
+    "dependencies": {},
+    "packageDependencies": {}
 }
