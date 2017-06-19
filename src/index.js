@@ -2,18 +2,19 @@ import express from 'express';
 import config from 'config';
 import graphqlHTTP from 'express-graphql';
 import schema from './schema';
-import postCtrl from './controllers/post.controller';
+import defaultCtrl from './controllers';
 
-function init() {
-  const app = express();
-  app.use('/graphql', (req, res) => {
+function init(path, _app, _ctrl) {
+  const app = _app || express();
+  path = path || '/graphql';
+  app.use(path, (req, res) => {
     const ctrl = {
       post: {
-        load: postCtrl.load,
-        list: postCtrl.list,
-        create: postCtrl.create,
-        remove: postCtrl.remove,
-        update: postCtrl.update
+        load: (_ctrl && _ctrl.post) ? _ctrl.post.load : defaultCtrl.post.load,
+        list: (_ctrl && _ctrl.post) ? _ctrl.post.list : defaultCtrl.post.list,
+        create: (_ctrl && _ctrl.post) ? _ctrl.post.create : defaultCtrl.post.create,
+        remove: (_ctrl && _ctrl.post) ? _ctrl.post.remove : defaultCtrl.post.remove,
+        update: (_ctrl && _ctrl.post) ? _ctrl.post.update : defaultCtrl.post.update
       }
     };
     graphqlHTTP({
@@ -22,10 +23,9 @@ function init() {
       context: { ctrl }
     })(req, res);
   });
-  console.log('App plistening at 1111');
-  app.listen(1111);
+  if (!_app) app.listen(1111);
 
 }
 
 
-module.exports = init;
+module.exports = {init};

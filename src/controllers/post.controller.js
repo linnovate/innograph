@@ -15,7 +15,6 @@ function update(params) {
 }
 
 function list(params) {
-  const { limit = 50, skip = 0 } = params;
   return [{id: '1', title: 'new post'}, {id: '2', title: 'new post'}]
 }
 
