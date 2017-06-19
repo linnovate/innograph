@@ -7,8 +7,8 @@
   "author": "Lior Kesos <lior@linnovate.net>",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node index.js --presets es2015,stage-2",
-    "build": "babel src --presets babel-preset-es2015 --out-dir dist",
+    "start": "babel-node index.js",
+    "build": "babel src --out-dir dist",
     "prepublish": "npm run build"
   },
   "dependencies": {
