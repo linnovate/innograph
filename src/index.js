@@ -1,5 +1,4 @@
 import express from 'express';
-import config from 'config';
 import graphqlHTTP from 'express-graphql';
 import schema from './schema';
 import defaultCtrl from './controllers';

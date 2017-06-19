@@ -4,10 +4,6 @@ var _express = require('express');
 
 var _express2 = _interopRequireDefault(_express);
 
-var _config = require('config');
-
-var _config2 = _interopRequireDefault(_config);
-
 var _expressGraphql = require('express-graphql');
 
 var _expressGraphql2 = _interopRequireDefault(_expressGraphql);
