@@ -1,16 +1,11 @@
 {
-    "sources": {
-        "impl": "impl.js",
-        "spec": "spec.js"
-    },
     "env": {
-        "compiler": "bit.envs/compilers/flow::latest",
-        "tester": "bit.envs/testers/mocha"
+        "compiler": "bit.envs/compilers/babel@1",
+        "tester": "none"
     },
-    "dependencies": {
-        "innograph.social/profile/schema": "3",
-        "innograph.social/profile/resolver": "3",
-        "innograph.social/post/schema": "3",
-        "innograph.social/post/resolver": "1"
+    "dependencies": {},
+    "structure": "components/{namespace}/{name}",
+    "dist": {
+        "target": "dist"
     }
 }
