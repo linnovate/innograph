@@ -7,7 +7,7 @@
   "author": "Lior Kesos <lior@linnovate.net>",
   "license": "MIT",
   "scripts": {
-    "start": "babel-node index.js",
+    "start": "babel-node src/index.js",
     "build": "babel src --out-dir dist",
     "prepublish": "npm run build"
   },

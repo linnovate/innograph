@@ -6,6 +6,9 @@ import {
 
 import postType from '../../types/post';
 
+/**
+ * query for a single post
+ */
 export default {
   type: postType,
   args: {

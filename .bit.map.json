@@ -1,0 +1,79 @@
+{
+    "ranm8.innograph/types/post@1": {
+        "files": [
+            {
+                "relativePath": "src/schema/types/post.js",
+                "test": false,
+                "name": "post.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/schema/types/post.js"
+    },
+    "ranm8.innograph/types/post-input@1": {
+        "files": [
+            {
+                "relativePath": "src/schema/types/post-input.js",
+                "test": false,
+                "name": "post-input.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/schema/types/post-input.js"
+    },
+    "ranm8.innograph/mutations/add-post@1": {
+        "files": [
+            {
+                "relativePath": "src/schema/mutations/post/add.js",
+                "test": false,
+                "name": "add.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/schema/mutations/post/add.js"
+    },
+    "ranm8.innograph/mutations/remove-post@1": {
+        "files": [
+            {
+                "relativePath": "src/schema/mutations/post/remove.js",
+                "test": false,
+                "name": "remove.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/schema/mutations/post/remove.js"
+    },
+    "ranm8.innograph/mutations/update-post@1": {
+        "files": [
+            {
+                "relativePath": "src/schema/mutations/post/update.js",
+                "test": false,
+                "name": "update.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/schema/mutations/post/update.js"
+    },
+    "ranm8.innograph/queries/single-post@1": {
+        "files": [
+            {
+                "relativePath": "src/schema/queries/post/single.js",
+                "test": false,
+                "name": "single.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/schema/queries/post/single.js"
+    },
+    "ranm8.innograph/queries/multiple-post@1": {
+        "files": [
+            {
+                "relativePath": "src/schema/queries/post/multiple.js",
+                "test": false,
+                "name": "multiple.js"
+            }
+        ],
+        "origin": "AUTHORED",
+        "mainFile": "src/schema/queries/post/multiple.js"
+    }
+}

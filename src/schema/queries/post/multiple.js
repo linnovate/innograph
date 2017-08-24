@@ -5,6 +5,9 @@ import {
 
 import postType from '../../types/post';
 
+/**
+ * query for multiple posts
+ */
 export default {
   type: new GraphQLList(postType),
   args: {

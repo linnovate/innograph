@@ -5,6 +5,9 @@ import {
   GraphQLID
 } from 'graphql';
 
+/**
+ * GraphQL type definition for post
+ */
 export default new GraphQLObjectType({
   name: 'Post',
   fields: () => ({

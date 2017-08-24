@@ -5,6 +5,9 @@ import {
 
 import postInputType from '../../types/post-input';
 
+/**
+ * add a new post 
+ */
 export default {
   type: GraphQLBoolean,
   args: {

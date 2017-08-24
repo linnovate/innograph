@@ -5,6 +5,17 @@ import {
 
 import postType from '../../types/post';
 
+/**
+ * remove a component
+ * @example
+ * mutation {
+ * remove(id: 4) {
+ *   id,
+ *   title,
+ *   content
+ * }
+ *}
+ */
 export default {
   type: postType,
   args: {

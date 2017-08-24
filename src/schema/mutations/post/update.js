@@ -6,6 +6,21 @@ import {
 import postType from '../../types/post';
 import postInputType from '../../types/post-input';
 
+/**
+ * update a post
+ * @example
+ * mutation {
+ *  update(id: 4,
+ *  data: {
+ *    title: 'foo bar',
+ *    content: 'foo bar is the best!'
+ *  }) {
+ *   id,
+ *   title,
+ *   content
+ *  }
+ * };
+ */
 export default {
   type: postType,
   args: {
