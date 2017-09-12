@@ -14,6 +14,9 @@ function init(path, _app, _ctrl) {
         create: (_ctrl && _ctrl.post) ? _ctrl.post.create : defaultCtrl.post.create,
         remove: (_ctrl && _ctrl.post) ? _ctrl.post.remove : defaultCtrl.post.remove,
         update: (_ctrl && _ctrl.post) ? _ctrl.post.update : defaultCtrl.post.update
+      },
+      profile: {
+        load: (_ctrl && _ctrl.profile) ? _ctrl.profile.load : defaultCtrl.profile.load,
       }
     };
     graphqlHTTP({
