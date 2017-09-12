@@ -9,7 +9,8 @@
   "scripts": {
     "start": "babel-node index.js",
     "build": "babel src --out-dir dist",
-    "prepublish": "npm run build"
+    "prepublish": "npm run build",
+    "postinstall": "npm run build"
   },
   "dependencies": {
     "babel-npm-module-example": "^1.0.0",
