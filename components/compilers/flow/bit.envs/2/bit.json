@@ -1,0 +1,17 @@
+{
+    "sources": {
+        "impl": "impl.js",
+        "spec": "spec.js"
+    },
+    "env": {
+        "compiler": "none",
+        "tester": "none"
+    },
+    "dependencies": {},
+    "packageDependencies": {
+        "babel-core": "^6.22.1",
+        "camelcase": "^4.0.0",
+        "babel-preset-latest": "^6.22.0",
+        "babel-plugin-transform-flow-strip-types": "^6.22.0"
+    }
+}

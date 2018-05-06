@@ -10,6 +10,10 @@ var _post = require('./post');
 
 var _post2 = _interopRequireDefault(_post);
 
+var _profile = require('./profile');
+
+var _profile2 = _interopRequireDefault(_profile);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-exports.default = _extends({}, _post2.default);
+exports.default = _extends({}, _post2.default, _profile2.default);

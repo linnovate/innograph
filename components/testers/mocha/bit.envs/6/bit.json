@@ -1,0 +1,18 @@
+{
+    "sources": {
+        "impl": "impl.js",
+        "spec": "spec.js"
+    },
+    "env": {
+        "compiler": "none",
+        "tester": "none"
+    },
+    "dependencies": {},
+    "packageDependencies": {
+        "mocha": "^3.2.0",
+        "chai": "^3.5.0",
+        "sinon": "^1.17.7",
+        "sinon-chai": "^2.8.0",
+        "mockery": "^2.0.0"
+    }
+}

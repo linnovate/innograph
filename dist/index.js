@@ -29,6 +29,9 @@ function init(path, _app, _ctrl) {
         create: _ctrl && _ctrl.post ? _ctrl.post.create : _controllers2.default.post.create,
         remove: _ctrl && _ctrl.post ? _ctrl.post.remove : _controllers2.default.post.remove,
         update: _ctrl && _ctrl.post ? _ctrl.post.update : _controllers2.default.post.update
+      },
+      profile: {
+        load: _ctrl && _ctrl.profile ? _ctrl.profile.load : _controllers2.default.profile.load
       }
     };
     (0, _expressGraphql2.default)({
