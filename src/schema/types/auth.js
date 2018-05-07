@@ -19,7 +19,13 @@ export default new GraphQLObjectType({
     user: {
       type: userType,
       resolve: (root) => {
-        return root;
+        return root.user;
+      }
+    },
+    error: {
+      type: GraphQLString,
+      resolve:(root) => {
+        return root.error;
       }
     }
   })

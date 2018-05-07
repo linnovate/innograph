@@ -13,6 +13,9 @@ import {
       },
       fullname: {
         type: GraphQLString
+      },
+      email: {
+        type: GraphQLString
       }
     })
   });

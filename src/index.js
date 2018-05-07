@@ -22,6 +22,7 @@ function init(path, _app, _ctrl, auth) {
     },
     auth: {
       verify: (_ctrl && _ctrl.auth) ? _ctrl.auth.verifyToken : defaultCtrl.auth.verifyToken,
+      login: (_ctrl && _ctrl.auth) ? _ctrl.auth.login : defaultCtrl.auth.login,
     }
   };
   path = path || '/graphql';
@@ -34,6 +35,7 @@ function init(path, _app, _ctrl, auth) {
   app.use(path, function(req, res, next) {
     const opname = req.body.operationName;
     if (['register', 'login'].indexOf(opname) > -1) return next();
+    if (!req.headers.authorization) return res.send(401);
     _ctrl.auth.verifyToken(req.headers.authorization).then((user) => {
       req.user = user;
       next();

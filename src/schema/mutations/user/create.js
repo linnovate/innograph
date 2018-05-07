@@ -1,6 +1,5 @@
 import {
-    GraphQLNonNull,
-    GraphQLBoolean
+    GraphQLNonNull
   } from 'graphql';
 
   import authType from '../../types/auth';  
