@@ -17,8 +17,8 @@ export default {
       type:GraphQLInt
     }
   },
-  resolve (root, params, { ctrl }) {
-    return ctrl.post.list(params)
+  resolve (root, params, { ctrl, user }) {
+    return ctrl.post.list(params);
   }
 };
 
