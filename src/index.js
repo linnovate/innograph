@@ -34,7 +34,8 @@ function init(path, _app, _ctrl, auth) {
   
   app.use(path, function(req, res, next) {
     const opname = req.body.operationName;
-    if (['register', 'login'].indexOf(opname) > -1) return next();
+
+    if (['register', 'login', undefined , 'undefined'].indexOf(opname) > -1) return next();
     if (!req.headers.authorization) return res.send(401);
     _ctrl.auth.verifyToken(req.headers.authorization).then((user) => {
       req.user = user;
