@@ -2,7 +2,8 @@ import {
     GraphQLObjectType,
     GraphQLNonNull,
     GraphQLString,
-    GraphQLID
+    GraphQLID,
+    GraphQLList,
   } from 'graphql';
   
   export default new GraphQLObjectType({
@@ -15,6 +16,12 @@ import {
         type: GraphQLString
       },
       email: {
+        type: GraphQLString
+      },
+      roles: {
+        type: new GraphQLList(GraphQLString)
+      },
+      isAdmin: {
         type: GraphQLString
       }
     })
